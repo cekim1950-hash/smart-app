@@ -7,42 +7,73 @@
         body { font-family: sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; background: #ffffff;}
         header { padding: 50px; text-align: center; }
         .container { display: flex; gap: 30px; max-width: 900px; margin: 0 auto; }
-        main { flex: 4; }
+        main { flex: 4; width: 100%; } /* 너비 안정화를 위해 width 추가 */
         section { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #d7d5d5; }
         article { background: #f1f5ff; padding: 20px; margin: 0; border-radius: 6px; }
         .emotion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 15px; }
         .sub-content-box p { font-size: 0.90rem; color: #2b2e35; line-height: 1.8; margin-bottom: 20px; }
 
+        .law-grid-container { 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+        .law-box { 
+            background-color: #ffffff;
+            border: 0.5px solid #b5b5b5;
+            border-top: 6px solid #050d62;
+            border-radius: 5px;
+            padding: 20px; 
+        }
+        .law-box h3 { 
+            margin-top: 0;
+            color: #2f353b;
+            font-size: 1.2rem;
+            border-bottom: 0.5px solid #94a3b8;
+            padding-bottom: 20px;
+            margin-bottom: 20px; 
+        }
+        .law-box p, .law-box ul { 
+            font-size: 0.95rem;
+            color: #2f353b;
+            line-height: 1.6; 
+        }
+        .law-box ul { 
+            padding-left: 20px;
+            margin-top: 8px; 
+        }
+        .law-box li { 
+            margin-bottom: 4px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 style="margin-top: 40px; margin-bottom: 20px; font-size: 2.6rem; color: #353535;" >통합 미디어법상 광고 규제 조항 신설 방안 연구</h1>
-        <p style="margin-top: 10; margin-bottom: 100px; color: #353535; font-size: 1.2rem;">매체 간 규제 격차 해소와 시청자의 인지적 장치 마련을 중심으로</p>
+        <h1 style="margin-top: 40px; margin-bottom: 20px; font-size: 2.6rem; color: #353535;">통합 미디어법상 광고 규제 조항 신설 방안 연구</h1>
+        <p style="margin-top: 10px; margin-bottom: 100px; color: #353535; font-size: 1.2rem;">매체 간 규제 격차 해소와 시청자의 인지적 장치 마련을 중심으로</p>
     </header>
 
     <div class="container">
-
         <main>
             
             <section id="section1">
                 <h2 style="margin-top: 40px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">1. 소비자의 감정적 평가</h2>
-                <p style="margin-top: 10; margin-bottom: 40px; font-size: 1.15rem; color: #353535;">
-                머릿속 권력의 중심부라고 불리는 ‘변연계(Limbic System)’가 결정 과정에 매우 강하게 관여하며, 인간의 감정 시스템과 결부된 구매 욕구를 발원시키는 핵심 기전으로 작용한다.
+                <p style="margin-top: 10px; margin-bottom: 40px; font-size: 1.15rem; color: #353535;">
+                    머릿속 권력의 중심부라고 불리는 ‘변연계(Limbic System)’가 결정 과정에 매우 강하게 관여하며, 인간의 감정 시스템과 결부된 구매 욕구를 발원시키는 핵심 기전으로 작용한다.
                 </p>
                 
                 <div class="emotion-grid">
-
                     <article class="sub-content-box">
                         <h3>무의식적 정보 처리</h3>
                         <p>
-                           상품과 서비스의 감정적 평가는 대부분 무의식 영역에서 발생하며, 소비자는 이러한 무의식적 평가의 결과를 객관적인 사실로 받아들인다.<br>
-                           진화론적 관점에서 인간의 뇌가 의식에 정보를 제공하려고 애를 쓰지 않는 이유는 '반응 속도의 최적화'와 '에너지 소비의 효율성'에 있다.
-                           이러한 뇌의 정보 처리 특성은 마케팅에서 ‘단순함’이 구매 증폭기로 작용하는 근거가 된다.
+                            상품과 서비스의 감정적 평가는 대부분 무의식 영역에서 발생하며, 소비자는 이러한 무의식적 평가의 결과를 객관적인 사실로 받아들인다.<br>
+                            진화론적 관점에서 인간의 뇌가 의식에 정보를 제공하려고 애를 쓰지 않는 이유는 '반응 속도의 최적화'와 '에너지 소비의 효율성'에 있다.
+                            이러한 뇌의 정보 처리 특성은 마케팅에서 ‘단순함’이 구매 증폭기로 작용하는 근거가 된다.
                         </p>
                         <div style="text-align: center;">
-                            <img src="media/무의식적_정보_처리.jpg" alt="무의식적 정보 처리 구조도" width="80%">
+                            <a href="https://ibb.co/mV4nj8G9"><img src="https://i.ibb.co/jPDCNRTy/image.jpg" alt="image" width="90%"></a>
                         </div>
                     </article>
                     
@@ -56,25 +87,21 @@
                             감정은 생명체의 즉각적인 행동을 재촉하므로, 뇌의 정보 처리 과정에서 일종의 ‘우선 통행권’을 부여받는 것이다.
                         </p>
                         <div style="text-align: center;">
-                            <img src="media/언어_처리_메커니즘.jpg" alt="언어 처리 메커니즘" width="80%">
+                            <a href="https://ibb.co/YwBp293"><img src="https://i.ibb.co/Nb2Zxhs/image.jpg" alt="image" width="90%"></a>
                         </div>
                     </article>
-
-                </div> 
+                </div>
             </section>
-
-
 
             <section id="section2">
                 <h2 style="margin-top: 80px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">2. 지상파와 OTT플랫폼의 규제 불평등</h2>
-                <p style="margin-top: 10; margin-bottom: 40px; font-size: 1.15rem;color: #353535;">
+                <p style="margin-top: 10px; margin-bottom: 40px; font-size: 1.15rem; color: #353535;">
                     미디어 시장에서 가장 큰 쟁점은 지상파 방송과 OTT 플랫폼 간의 법적·제도적 규제 불평등이다. <br>
                     지상파는 공공재인 ‘유한한 전파’를 사용하기에 공적 책임이 강조되어 정부(방송통신위원회)의 허가를 받아야 한다. <br>
-                    반면 인터넷망을 기반으로 하는 OTT의 경우, 법적으로 ‘부가통신사업’에 해당하여 별도의 허가 없이 간단한 신고 또는 등록만으로 사업을 영위할 수 있다. 
+                    반면 인터넷망을 기반으로 하는 OTT의 경우, 법적으로 ‘부가통신사업’에 해당하여 별도의 허가 없이 간단한 신고 또는 등록만으로 사업을 영위할 수 묵는다.
                 </p>
 
                 <div class="emotion-grid">
-
                     <article class="sub-content-box">
                         <h3>규제 및 심의</h3>
                         <p style="text-indent: -0.5em; padding-left: 0.5em;">
@@ -82,194 +109,151 @@
                             OTT에서는 실제 주류 브랜드가 그대로 노출될 뿐만 아니라, 연출상 흡연 장면이나 담뱃갑이 모자이크 없이 등장해도 제재를 받지 않는다.
                         </p>
                         <div class="box-img-wrapper" style="display: flex; gap: 4%; justify-content: center;">
-                            <img src="media/더글로리.jpg" alt="더글로리" width="48%">
-                            <img src="media/술꾼도시여자들.jpg" alt="술꾼도시여자들" width="48%">
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/zHtrWySM/image.jpg" alt="더글로리" width="100%"></a>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/CpLPcwzn/image.jpg" alt="술꾼도시여자들" width="100%"></a>
                         </div>
                     </article>
 
                     <article class="sub-content-box">
                         <h3>간접광고</h3>
                         <div style="background: #ffffff; padding: 15px 15px; border-left: 3px solid #94a3b8; border-radius: 4px; margin-bottom: 15px; font-size: 0.87rem;">
-                        <strong>「방송법 시행령」 제59조의 3</strong><br>
-                        간접광고의 크기는 화면의 4분의 1을 초과하지 아니해야 한다.
+                            <strong>「방송법 시행령」 제59조의 3</strong><br>
+                            간접광고의 크기는 화면의 4분의 1을 초과하지 아니해야 한다.
                         </div>
 
                         <div style="background: #ffffff; padding: 15px 15px; border-left: 3px solid #94a3b8; border-radius: 4px; margin-bottom: 20px; font-size: 0.87rem;">
-                        <strong>「방송광고심의에 관한 규정」 제47조</strong><br>
-                        간접광고 상품 등을 연상시키는 광고문구, 음향 또는 이미지를 사용하거나 특징·장점을 묘사하는 등의 방법으로 부적절한 광고효과를 주는 내용을 방송하여서는 아니 된다.
+                            <strong>「방송광고심의에 관한 규정」 제47조</strong><br>
+                            간접광고 상품 등을 연상시키는 광고문구, 음향 또는 이미지를 사용하거나 특징·장점을 묘사하는 등의 방법으로 부적절한 광고효과를 주는 내용을 방송하여서는 아니 된다.
                         </div>
     
                         <p>
-                        OTT가 지상파에 비해 ‘뜬금포 PPL’이 덜하다고 느껴지는 이유는 법이 유연하기 때문이다. 화면 크기나 대사 표현의 제약을 받지 않는 OTT 제작 환경에서는 대본 기획 단계부터 광고 요소를 이야기 속에 자연스럽게 융합시킨다.
+                            OTT가 지상파에 비해 ‘뜬금포 PPL’이 덜하다고 느껴지는 이유는 법이 유연하기 때문이다. 화면 크기나 대사 표현의 제약을 받지 않는 OTT 제작 환경에서는 대본 기획 단계부터 광고 요소를 이야기 속에 자연스럽게 융합시킨다.
                         </p>
                     </article>   
                 </div>
             </section>
-    
-        
+
             <section id="section3">
                 <h2 style="margin-top: 80px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">3. Digital Services Act(DSA)</h2>
-                <p style="margin-top: 10; margin-bottom: 40px; font-size: 1.15rem;color: #353535;">유럽연합의 새로운 온라인 서비스 규제인 ‘디지털 서비스법(Digital Services Act, DSA)’은 불법적이고 해로운 온라인 콘텐츠를 효과적으로 통제하고자 마련되었다.불법 콘텐츠 삭제, 투명성 강화, 대규모 온라인 플랫폼에 대한 규제 강화를 핵심 관리 항목으로 삼고 있다.</p>
+                <p style="margin-top: 10px; margin-bottom: 40px; font-size: 1.15rem; color: #353535;">유럽연합의 새로운 온라인 서비스 규제인 ‘디지털 서비스법(Digital Services Act, DSA)’은 불법적이고 해로운 온라인 콘텐츠를 효과적으로 통제하고자 마련되었다. 불법 콘텐츠 삭제, 투명성 강화, 대규모 온라인 플랫폼에 대한 규제 강화를 핵심 관리 항목으로 삼고 있다.</p>
                 
                 <div class="emotion-grid">
-
                     <article class="sub-content-box">
-                    <h3>소비자의 알 권리</h3>
-                    <p>
-                        제 26조(온라인 플랫폼 광고)에 따르면 온라인 플랫폼은 광고 게재 시, 이용자에게 해당 콘텐츠가 광고라는 사실, 광고를 게재한 주체, 그리고 타겟팅에 사용된 주요 매개변수(매칭의 기반이 된 데이터 기준) 등의 정보를 실시간으로 의무 공개해야 한다.
-                    </p>
-                    <div style="text-align: center;">
-                        <img src="media/DSA_26조.jpg" alt="DSA사례" width="85%">
-                    </div>
-                </article>
-                
-                <article class="sub-content-box">
-                    <h3>다크 패턴</h3>
-                    <p> ‘다크 패턴’이란 사용자가 자신도 모르게 구매나 구독, 정보 제공 등의 비합리적인 결정을 내리도록 교묘하게 설계된 인터페이스(UI)이다.</p>
-                    <p style="font-size: 0.85rem; color: #0a5097; font-weight: bold; margin-bottom: 10px;">[주요 규제 대상]</p>
-                    <ul style="font-size: 0.88rem; color: #383e48; padding-left: 20px; margin-top: 0; line-height: 1.6;">
-                        <li style="margin-bottom: 6px;">특정 선택 사항(기업에 유리한 선택)을 편향되게 강조하는 행위</li>
-                        <li style="margin-bottom: 6px;">팝업창 등을 통해 이용자가 이미 내린 거절 선택을 반복적으로 재요청하여 사용자 경험을 방해하는 행위</li>
-                        <li style="margin-bottom: 0;">서비스 해지 절차를 가입 절차보다 의도적으로 복잡하게 설계하는 행위</li>
-                    </ul>     
-                </article>
+                        <h3>소비자의 알 권리</h3>
+                        <p>
+                            제 26조(온라인 플랫폼 광고)에 따르면 온라인 플랫폼은 광고 게재 시, 이용자에게 해당 콘텐츠가 광고라는 사실, 광고를 게재한 주체, 그리고 타겟팅에 사용된 주요 매개변수(매칭의 기반이 된 데이터 기준) 등의 정보를 실시간으로 의무 공개해야 한다.
+                        </p>
+                        <div style="text-align: center;">
+                            <a href="https://ibb.co/kRr1xDF"><img src="https://i.ibb.co/cGpL18d/DSA-26.jpg" alt="DSA-26" width="85%"></a>
+                        </div>
+                    </article>
+                    
+                    <article class="sub-content-box">
+                        <h3>다크 패턴</h3>
+                        <p> ‘다크 패턴’이란 사용자가 자신도 모르게 구매나 구독, 정보 제공 등의 비합리적인 결정을 내리도록 교묘하게 설계된 인터페이스(UI)이다.</p>
+                        <p style="font-size: 0.85rem; color: #0a5097; font-weight: bold; margin-bottom: 10px;">[주요 규제 대상]</p>
+                        <ul style="font-size: 0.88rem; color: #383e48; padding-left: 20px; margin-top: 0; line-height: 1.6;">
+                            <li style="margin-bottom: 6px;">특정 선택 사항(기업에 유리한 선택)을 편향되게 강조하는 행위</li>
+                            <li style="margin-bottom: 6px;">팝업창 등을 통해 이용자가 이미 내린 거절 선택을 반복적으로 재요청하여 사용자 경험을 방해하는 행위</li>
+                            <li style="margin-bottom: 0;">서비스 해지 절차를 가입 절차보다 의도적으로 복잡하게 설계하는 행위</li>
+                        </ul>     
+                    </article>
                 </div>
             </section>
 
             <section id="section4">
                 <h2 style="margin-top: 80px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">4. 통합미디어법의 난항</h2>
-                <p style="margin-top: 10; margin-bottom: 40px; font-size: 1.15rem;color: #353535;">
-                현행 방송법 체계는 지난 2000년 통합방송법 제정 이후 25년 동안 큰 변화 없이 유지됐다. 그동안 IPTV가 등장하고, 유튜브‧넷플릭스 등 OTT 위주로 미디어 소비 방식이 변화하며 방송 미디어 시장도 급격하게 변화했지만 방송법은 이를 반영하지 못했다.
+                <p style="margin-top: 10px; margin-bottom: 40px; font-size: 1.15rem; color: #353535;">
+                    현행 방송법 체계는 지난 2000년 통합방송법 제정 이후 25년 동안 큰 변화 없이 유지됐다. 그동안 IPTV가 등장하고, 유튜브‧넷플릭스 등 OTT 위주로 미디어 소비 방식이 변화하며 방송 미디어 시장도 급격하게 변화했지만 방송법은 이를 반영하지 못했다.
                 </p>
 
                 <div class="emotion-grid">
                     <article class="sub-content-box">
-                    <h3>정부 부처 간 입장 차이</h3>
-                    <p>
-                        국내 미디어 정책은 방송통신위원회(방통위), 과학기술정보통신부(과기정통부), 문화체육관광부(문체부) 등 다수 부처로 권한과 책임이 분산돼 있어 정책적 불협화음을 양산하고 있다.<br><br>
+                        <h3>정부 부처 간 입장 차이</h3>
+                        <p>
+                            국내 미디어 정책은 방송통신위원회(방통위), 과학기술정보통신부(과기정통부), 문화체육관광부(문체부) 등 다수 부처로 권한과 책임이 분산돼 있어 정책적 불협화음을 양산하고 있다.<br><br>
                             과기정통부의 '디지털미디어서비스'는 디지털 기술의 발전과 매체 융합을 고려하여 전통적인 방송과 OTT를 동일 선상에서 다루려는 시도이며, 방통위의 '시청각미디어서비스'는 기존 방송과 OTT뿐만 아니라 향후 등장할 신유형 미디어 서비스까지 폭넓게 제도권에 포섭하려는 구상이다.
-                    </p>
+                        </p>
                     </article>
 
                     <article class="sub-content-box">
-                    <h3>현실적 적용에 따른 딜레마</h3>
-                    <p>
-                        지상파와 OTT가 사실상 동등한 동영상 서비스를 제공하므로 규제 체계를 일원화하자는 것이 통합미디어법의 본래 취지였다.<br><br>
-                        그러나 넷플릭스, 유튜브 등 해외 빅테크 기업에 국내 방송법 수준의 엄격한 사전 규제(심의, 편성 비율 등)를 강제하기는 현실적으로 어렵다. 규제 집행력이 명확하지 않은 상황에서 법제화를 강행할 경우, 해외 기업은 이를 우회하고 웨이브, 티빙 등 국내 사업자만 묶이는 역차별을 초래할 수 있다.
-                    </p>
+                        <h3>현실적 적용에 따른 딜레마</h3>
+                        <p>
+                            지상파와 OTT가 사실상 동등한 동영상 서비스를 제공하므로 규제 체계를 일원화하자는 것이 통합미디어법의 본래 취지였다.<br><br>
+                            그러나 넷넷플릭스, 유튜브 등 해외 빅테크 기업에 국내 방송법 수준의 엄격한 사전 규제(심의, 편성 비율 등)를 강제하기는 현실적으로 어렵다. 규제 집행력이 명확하지 않은 상황에서 법제화를 강행할 경우, 해외 기업은 이를 우회하고 웨이브, 티빙 등 국내 사업자만 묶이는 역차별을 초래할 수 있다.
+                        </p>
                     </article>
                 </div>
             </section>
-                
-    
-        <style>
-         .law-grid-container 
-        { display: grid;
-          grid-template-columns: repeat(2, 1fr); 
-          gap: 20px; 
-          margin-top: 20px;}
 
-        .law-box 
-        { background-color: #ffffff;
-          border: 0.5px solid #b5b5b5;
-          border-top: 6px solid #050d62;
-          border-radius: 5px;
-          padding: 20px; }
+            <section id="section5">
+                <h2 style="margin-top: 80px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">5. 통합미디어법</h2>
+                <p style="margin-top: 10px; margin-bottom: 80px; font-size: 1.15rem; color: #353535;">
+                    통합미디어법을 둘러싼 쟁점은 크게 세 가지이다. <br>
+                    방송미디어의 새로운 분류 체계를 어떻게 가져갈 것인지, 방송의 규제 수준을 어디까지 완화할 것인지, 통합미디어법에 포섭되는 OTT 등 신유형 미디어에 어느 정도의 의무를 부과할 것인지에 대한 부분이다.
+                </p>
 
-        .law-box h3 
-        { margin-top: 0;
-          color: #2f353b;
-          font-size: 1.2rem;
-          border-bottom: 0.5px solid #94a3b8;
-          padding-bottom: 20px;
-          margin-bottom: 20px; }
-
-        
-        .law-box p, .law-box ul
-        { font-size: 0.95rem;
-          color: #2f353b;
-          line-height: 1.6; }
-
-        .law-box ul 
-        { padding-left: 20px;
-          margin-top: 8px; }
-
-        .law-box li 
-        { margin-bottom: 4px;}
-    </style>
-</head>
-<body>
-
-    <section id="section5">
-        <h2 style="margin-top: 80px; margin-bottom: 4px; font-size: 1.5rem; font-weight: 700; color: #353535;">5. 통합미디어법</h2>
-        <p style="margin-top: 10; margin-bottom: 80px; font-size: 1.15rem;color: #353535;">
-            통합미디어법을 둘러싼 쟁점은 크게 세 가지이다. <br>
-            방송미디어의 새로운 분류 체계를 어떻게 가져갈 것인지, 방송의 규제 수준을 어디까지 완화할 것인지, 통합미디어법에 포섭되는 OTT 등 신유형 미디어에 어느 정도의 의무를 부과할 것인지에 대한 부분이다.
-        </p>
-
-        <div class="law-grid-container">
-
-            <div class="law-box">
-                <h3>제1조 (시청각미디어서비스의 분류 및 책무)</h3>
-                <p>① 시청각미디어서비스 정의: 음성·영상 등으로 구성된 콘텐츠를 공중에게 제공하는 서비스로, 성격에 따라 구분함.</p>
-                <ul>
-                    <li><strong>1. 공공영역:</strong> 공정성·공익성 실현 책무
+                <div class="law-grid-container">
+                    <div class="law-box">
+                        <h3>제1조 (시청각미디어서비스의 분류 및 책무)</h3>
+                        <p>① 시청각미디어서비스 정의: 음성·영상 등으로 구성된 콘텐츠를 공중에게 제공하는 서비스로, 성격에 따라 구분함.</p>
                         <ul>
-                            <li>가. 공영방송서비스</li>
-                            <li>나. 지상파방송서비스</li>
-                            <li>다. 보도전문채널서비스</li>
+                            <li><strong>1. 공공영역:</strong> 공정성·공익성 실현 책무
+                                <ul>
+                                    <li>가. 공영방송서비스</li>
+                                    <li>나. 지상파방송서비스</li>
+                                    <li>다. 보도전문채널서비스</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. 시장영역:</strong> 자율성 보장 및 최소 규제
+                                <ul>
+                                    <li>가. 시청각콘텐츠서비스 (실시간, 비실시간/OTT, 이용자제작)</li>
+                                    <li>나. 시청각플랫폼서비스 (제1유형: 망 보유, 제2유형: 웹플랫폼)</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li><strong>2. 시장영역:</strong> 자율성 보장 및 최소 규제
+                    </div>
+
+                    <div class="law-box">
+                        <h3>제2조 (시청각미디어서비스 광고의 규제 원칙)</h3>
+                        <p>① 원칙: 명시적 금지 외 모두 허용하는 <strong>'네거티브 규제 방식'</strong></p>
+                        <p>※ 예외적 금지 항목:</p>
                         <ul>
-                            <li>가. 시청각콘텐츠서비스 (실시간, 비실시간/OTT, 이용자제작)</li>
-                            <li>나. 시청각플랫폼서비스 (제1유형: 망 보유, 제2유형: 웹플랫폼)</li>
+                            <li>1. 국민 건강 및 보건 위생 위해 우려 (주류, 담배, 전문의약품 등)</li>
+                            <li>2. 어린이·청소년 정서 왜곡 및 보호 필요 품목</li>
+                            <li>3. 사행심 조장 및 서민 경제 저해 우려 (도박, 대부업 등)</li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
+                        <p>② 규제 전면 완화: 과거 지상파 중심의 양적 규제를 OTT 등 시장 영역 기준에 맞춤</p>
+                        <ul>
+                            <li>1. 광고 총량 규제 폐지 ➔ '시간당 상한제' 통합</li>
+                            <li>2. 가상·간접광고(PPL) 크기 및 시간제한 해제</li>
+                            <li>3. 중간광고 편성 전면 자율화</li>
+                        </ul>
+                    </div>
 
-            <div class="law-box">
-                <h3>제2조 (시청각미디어서비스 광고의 규제 원칙)</h3>
-                <p>① 원칙: 명시적 금지 외 모두 허용하는 <strong>'네거티브 규제 방식'</strong></p>
-                <p>※ 예외적 금지 항목:</p>
-                <ul>
-                    <li>1. 국민 건강 및 보건 위생 위해 우려 (주류, 담배, 전문의약품 등)</li>
-                    <li>2. 어린이·청소년 정서 왜곡 및 보호 필요 품목</li>
-                    <li>3. 사행심 조장 및 서민 경제 저해 우려 (도박, 대부업 등)</li>
-                </ul>
-                <p>② 규제 전면 완화: 과거 지상파 중심의 양적 규제를 OTT 등 시장 영역 기준에 맞춤</p>
-                <ul>
-                    <li>1. 광고 총량 규제 폐지 ➔ '시간당 상한제' 통합</li>
-                    <li>2. 가상·간접광고(PPL) 크기 및 시간제한 해제</li>
-                    <li>3. 중간광고 편성 전면 자율화</li>
-                </ul>
-            </div>
+                    <div class="law-box">
+                        <h3>제3조 (시장영역 서비스 제공자의 의무)</h3>
+                        <p>① 신고 의무: 시장영역 서비스를 제공하려는 자는 방송미디어통신위원회에 신고해야 함.</p>
+                        <p>② 자료 제출 의무: 일정 규모 이상의 제공자는 알고리즘 투명성 확보 등을 위해 매년 아래 자료를 제출함.</p>
+                        <ul>
+                            <li>1. 분기별·연간 이용자 수 (가입자 및 활성 이용자)</li>
+                            <li>2. 시청각미디어서비스 매출액 및 광고 수익 현황</li>
+                            <li>3. 콘텐츠 추천·배치 자동화 서비스(알고리즘)의 기본 원칙 및 구동 기준</li>
+                        </ul>
+                    </div>
 
-            <div class="law-box">
-                <h3>제3조 (시장영역 서비스 제공자의 의무)</h3>
-                <p>① 신고 의무: 시장영역 서비스를 제공하려는 자는 방송미디어통신위원회에 신고해야 함.</p>
-                <p>② 자료 제출 의무: 일정 규모 이상의 제공자는 알고리즘 투명성 확보 등을 위해 매년 아래 자료를 제출함.</p>
-                <ul>
-                    <li>1. 분기별·연간 이용자 수 (가입자 및 활성 이용자)</li>
-                    <li>2. 시청각미디어서비스 매출액 및 광고 수익 현황</li>
-                    <li>3. 콘텐츠 추천·배치 자동화 서비스(알고리즘)의 기본 원칙 및 구동 기준</li>
-                </ul>
-            </div>
-
-            <div class="law-box">
-                <h3>제4조 (시청자의 광고 인식권 보장)</h3>
-                <p>① 대가성 노출 고지: 경제적 대가를 받고 콘텐츠 내 상품 노출 또는 협찬(간접광고) 시 시청자가 직관적으로 알 수 있게 명확히 고지해야 함.</p>
-                <p>② 표준 고지 규정 수립: 방송미디어통신위원회의 표시 형식 고시 항목</p>
-                <ul>
-                    <li>1. 콘텐츠 시작 전 안내 명시</li>
-                    <li>2. 상영 중 자막, 심볼, 화면 상단 고정 노출 등 형식 지정</li>
-                    <li>3. 인지에 충분한 최소 노출 시간 및 글자 크기 지정</li>
-                </ul>
-                <p>③ 연출 원칙: 예술성과 흐름을 해치지 않는 선에서 시각적 심볼 등을 활용해야 하며, 시청권을 과도하게 침해해서는 안 됨.</p>
-            </div>
-
-        </div> </section>
+                    <div class="law-box">
+                        <h3>제4조 (시청자의 광고 인식권 보장)</h3>
+                        <p>① 대가성 노출 고지: 경제적 대가를 받고 콘텐츠 내 상품 노출 또는 협찬(간접광고) 시 시청자가 직관적으로 알 수 있게 명확히 고지해야 함.</p>
+                        <p>② 표준 고지 규정 수립: 방송미디어통신위원회의 표시 형식 고시 항목</p>
+                        <ul>
+                            <li>1. 콘텐츠 시작 전 안내 명시</li>
+                            <li>2. 상영 중 자막, 심볼, 화면 상단 고정 노출 등 형식 지정</li>
+                            <li>3. 인지에 충분한 최소 노출 시간 및 글자 크기 지정</li>
+                        </ul>
+                        <p>③ 연출 원칙: 예술성과 흐름을 해치지 않는 선에서 시각적 심볼 등을 활용해야 하며, 시청권을 과도하게 침해해서는 안 됨.</p>
+                    </div>
+                </div> 
             </section>
 
         </main>
